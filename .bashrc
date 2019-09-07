@@ -171,6 +171,8 @@ if [[ $(echo $USERPROFILE | sed 's:.*\\::') == "cbw" ]]; then
   alias doc="cd $dhome/Documents && pwd && ls"
 fi
 
+alias g="git"
+
 # disable flow control
 stty -ixon
 
