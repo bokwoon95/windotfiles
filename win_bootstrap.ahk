@@ -74,6 +74,11 @@ if (!FileExist("C:\Program Files\AutoHotkey\AutoHotkey.exe")) {
     Run %A_Desktop%\ahk-install.exe
 }
 
+if (FileExist("C:\Users\" . A_UserName . "\windotfiles\shortcuts.ahk") && !FileExist(A_Startup . "\shortcuts.ahk")) {
+    Run cmd.exe /c %A_Startup%\shortcuts.ahk C:\Users\%A_UserName%\windotfiles\shortcuts.ahk
+}
+Run % A_Startup
+
 ; autohotkey
 ; chrome
 ; whatsapp
