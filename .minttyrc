@@ -1,0 +1,13 @@
+BoldAsFont=no
+CursorType=block
+ThemeFile=rosipov
+ClicksTargetApp=no
+BoldAsColour=no
+Locale=en_US
+Charset=UTF-8
+Font=Consolas
+FontHeight=10
+Term=xterm-256color
+Columns=144
+Rows=38
+BellFlash=no
