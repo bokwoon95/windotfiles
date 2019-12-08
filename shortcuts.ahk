@@ -27,7 +27,7 @@ return
     userprofile_D := RegExReplace(userprofile, "C:", Replacement := "D:")
     ^!#h:: OpenFolder("C:\Users\cbw")
     ^!#l:: OpenFolder("D:\Users\cbw", "\Downloads")
-    ^!#o:: OpenFolder("D:\Users\cbw", "\Documents")
+    ^!#o:: OpenFolder("C:\Users\cbw", "\Documents")
     ^!#d:: OpenFolder("C:\Users\cbw", "\Desktop")
     ^!#p:: OpenFolder("D:\Users\cbw", "\Pictures")
     ^!#v:: OpenFolder("D:\Users\cbw", "\Videos")
