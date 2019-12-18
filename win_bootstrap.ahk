@@ -79,10 +79,20 @@ if (FileExist("C:\Users\" . A_UserName . "\windotfiles\shortcuts.ahk") && !FileE
 }
 Run % A_Startup
 
-; autohotkey
+; 7zip
 ; chrome
 ; whatsapp
 ; telegram
 ; idm
 ; sumatrapdf
 ; vlc
+; steam
+; epic launcher
+; nvidia driver
+
+; node
+; golang
+; forticlient
+; dbeaver
+; docker desktop
+; duet display
