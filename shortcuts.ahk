@@ -204,7 +204,7 @@ return
 ; Systemwide Ctrl-Tab & F5 refresh mappings
 #+]::SendInput {Ctrl Down}{Tab}{Ctrl Up}
 #+[::SendInput {Ctrl Down}{Shift Down}{Tab}{Shift Up}{Ctrl Up}
-#r::SendInput {F5}
+; #r::SendInput {F5}
 
 #If (WinActive("ahk_class MultitaskingViewFrame") || WinActive("ahk_class TaskSwitcherWnd") || WinActive("Windows.UI.Core.CoreWindow"))
 !`::SendInput {Alt Down}{Left}
@@ -230,7 +230,7 @@ GroupAdd, UnixGroup , ahk_exe mintty.exe
 
 ; #IfWinNotActive, ahk_group UnixGroup ;Why doesn't GroupAdd work here?
 ; #IfWinNotActive, ahk_exe gvim.exe
-#If !(WinActive("ahk_exe gvim.exe") || WinActive("ahk_exe mintty.exe") || WinActive("ahk_exe ubuntu.exe") || WinActive("ahk_exe emacs.exe") || WinActive("ahk_exe devenv.exe"))
+#If !(WinActive("ahk_exe gvim.exe") || WinActive("ahk_exe mintty.exe") || WinActive("ahk_exe ubuntu.exe") || WinActive("ahk_exe emacs.exe") || WinActive("ahk_exe devenv.exe") || WinActive("ahk_exe ConEmu64.exe") || WinActive("ahk_exe golang64.exe"))
     $^a::SendInput {Home}
     ^e::SendInput {End}
     $!+,::SendInput ^{Home}
